@@ -1,0 +1,105 @@
+/* Mengatur gaya dasar untuk container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Gaya header dan navbar */
+header {
+    background-color: #52e657;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Mengatur navbar dan ikon */
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.navbar li {
+    margin-right: 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px; /* Ukuran ikon */
+    transition: color 0.3s;
+}
+
+.navbar li a:hover {
+    color: #ffdd57; /* Warna saat ikon di-hover */
+}
+
+/* Style untuk section */
+.section {
+    padding: 40px 0;
+}
+
+/* Mengatur tampilan carousel */
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* Gaya footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navbar li {
+        margin-right: 0;
+    }
+}
